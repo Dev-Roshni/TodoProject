@@ -1,0 +1,37 @@
+🔹 method: "POST" kya hota hai?
+HTTP me methods hote hain jo batate hain hum server se kya kaam karwana chahte
+| Method | Kaam              |
+| ------ | ----------------- |
+| GET    | Data lana         |
+| POST   | Naya data bhejna  |
+| PUT    | Pura data update  |
+| PATCH  | Thoda data update |
+| DELETE | Data delete       |
+
+👉 POST tab use hota hai jab:
+
+💥form submit karte ho
+💥user data bhejte ho
+💥database me new record banana ho
+
+🔹 headers kya hote hain?
+Headers extra information hote hain jo hum server ko batate hain.
+Jaise:
+💥“Main kaunsa type ka data bhej raha hoon”
+headers: {
+  "Content-Type": "application/json"
+}
+
+🔹Content-Type: application/json kyu use karte hain?
+💥Iska matlab:
+“Main server ko JSON format me data bhej raha hoon”
+Server ko pata hona chahiye:
+
+🌸data kis format me hai
+🌸kaise read karna hai
+🌸Agar ye nahi likhoge to:
+🌸server confuse ho sakta hai
+🌸error aa sakta hai
+
+🔹 body: JSON.stringify() kya karta hai?
+🌸Server object samajh nahi pata, isliye usko JSON string me convert karna padta hai:
